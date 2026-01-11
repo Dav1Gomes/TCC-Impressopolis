@@ -1,4 +1,3 @@
-/* HERO */
 .hero {
   background: #e0e0e0;
   height: 300px;
@@ -7,7 +6,6 @@
   align-items: center;
 }
 
-/* BOTÃO DOWNLOAD */
 .btn-download {
   background: #8cec74;
   color: white;
@@ -18,7 +16,6 @@
   cursor: pointer;
 }
 
-/* MENU PRINCIPAL */
 .menu-principal {
   display: flex;
   justify-content: center;
@@ -26,7 +23,6 @@
   padding: 30px 20px;
 }
 
-/* BOTÕES DO MENU */
 .btn-menu {
   background: #dc7dec;
   color: white;

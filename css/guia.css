@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    gap: 80px;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+}
+
+.conteudo {
+    flex: 1;
+    max-width: 800px;
+}
+
+.conteudo h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.conteudo article {
+    margin-bottom: 80px;
+}
+
+.conteudo h2 {
+    margin-bottom: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
