@@ -1,0 +1,17 @@
+.sobre-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.sobre-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sobre-container p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    text-align: justify;
+}
