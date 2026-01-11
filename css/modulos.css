@@ -48,7 +48,27 @@
   border-radius: 25px;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.card h2 {
+  font-family: 'Aoboshi One', serif;
+  font-size: 22px;
+  color: #000;
+  z-index: 1;
+  text-align: center;
+  padding: 0 10px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover h2 {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
 
 .overlay {
   position: absolute;
@@ -67,7 +87,7 @@
 }
 
 .overlay button {
-  background: #8cec74;
+  background: #7ecbff;
   border: none;
   padding: 14px 36px;
   border-radius: 14px;
