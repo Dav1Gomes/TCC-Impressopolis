@@ -32,6 +32,19 @@
         <li><a href="obj/Casa.html">Casa</a></li>
         <li><a href="obj/Base.html">Base</a></li>
       </ul>
+
+      <div class="filtro">
+        <h3>Filtrar</h3>
+
+        <label><input type="checkbox" value="overhang"> Overhang</label>
+        <label><input type="checkbox" value="stringing"> Stringing</label>
+        <label><input type="checkbox" value="warping"> Warping</label>
+        <label><input type="checkbox" value="ponte"> Ponte</label>
+        <label><input type="checkbox" value="ondulacoes"> Ondulações</label>
+        <label><input type="checkbox" value="subsobre"> Sub/Sobreextrusão</label>
+        <label><input type="checkbox" value="peelefante"> Pé de elefante</label>
+        <label><input type="checkbox" value="tolerancias"> Tolerâncias</label>
+      </div>
     </aside>
 
     <section class="conteudo">
@@ -39,52 +52,40 @@
 
       <div class="grid">
 
-        <a href="obj/Banco.html" class="card">
+        <a href="obj/Banco.html" class="card" data-filtro="ponte">
           <h2>Banco</h2>
-          <div class="overlay">
-            <button>Acessar</button>
-          </div>
+          <div class="overlay"><button>Acessar</button></div>
         </a>
 
-        <a href="obj/Postes.html" class="card">
+        <a href="obj/Postes.html" class="card" data-filtro="stringing">
           <h2>Postes</h2>
-          <div class="overlay">
-            <button>Acessar</button>
-          </div>
+          <div class="overlay"><button>Acessar</button></div>
         </a>
 
-        <a href="obj/Onibus.html" class="card">
+        <a href="obj/Onibus.html" class="card" data-filtro="subsobre">
           <h2>Ônibus</h2>
-          <div class="overlay">
-            <button>Acessar</button>
-          </div>
+          <div class="overlay"><button>Acessar</button></div>
         </a>
 
-        <a href="obj/PontoOnibus.html" class="card">
+        <a href="obj/PontoOnibus.html" class="card" data-filtro="overhang">
           <h2>Ponto de Ônibus</h2>
-          <div class="overlay">
-            <button>Acessar</button>
-          </div>
+          <div class="overlay"><button>Acessar</button></div>
         </a>
 
-        <a href="obj/Casa.html" class="card">
+        <a href="obj/Casa.html" class="card" data-filtro="ondulacoes peelefante tolerancias">
           <h2>Casa</h2>
-          <div class="overlay">
-            <button>Acessar</button>
-          </div>
+          <div class="overlay"><button>Acessar</button></div>
         </a>
 
-        <a href="obj/Base.html" class="card">
+        <a href="obj/Base.html" class="card" data-filtro="warping">
           <h2>Base</h2>
-          <div class="overlay">
-            <button>Acessar</button>
-          </div>
+          <div class="overlay"><button>Acessar</button></div>
         </a>
 
       </div>
     </section>
 
   </main>
-
+  <script src="js/filtros-modulos.js"></script>
 </body>
 </html>
