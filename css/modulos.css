@@ -52,6 +52,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card h2 {
@@ -67,6 +70,44 @@
 .card:hover h2 {
   opacity: 0;
   transform: translateY(10px);
+}
+
+.card-banco {
+  background-image: url("../img/Banco.jpg");
+}
+
+.card-postes {
+  background-image: url("../img/Postes.jpg");
+}
+
+.card-onibus {
+  background-image: url("../img/Onibus.jpg");
+}
+
+.card-ponto {
+  background-image: url("../img/Ponto_de_Onibus.jpg");
+}
+
+.card-casa {
+  background-image: url("../img/Casa.jpg");
+}
+
+.card-base {
+  background-image: url("../img/Base.jpg");
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.25);
+  z-index: 0;
+}
+
+.card h2,
+.overlay {
+  position: relative;
+  z-index: 1;
 }
 
 
