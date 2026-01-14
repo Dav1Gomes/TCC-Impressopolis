@@ -67,38 +67,44 @@
 @media (max-width: 768px) {
 
   .hero {
-    min-height: 260px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 20px;
   }
 
   .hero-conteudo {
-    gap: 24px;
-  }
-
-  .titulo-projeto {
-    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
   }
 
   .btn-download {
-    width: 90%;
-    max-width: 320px;
+    width: 156%;
+    max-width: 360px;
+    text-align: center;
+    font-size: 30px;
     padding: 26px 0;
-    font-size: 22px;
   }
 
   .menu-principal {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
-    padding-top: 20px;
+    gap: 0; 
+    padding: 20px 0;
   }
 
   .btn-menu {
-    width: 90%;
+    width: 85%;
     max-width: 320px;
-    padding: 20px 0;
-    font-size: 18px;
+    padding: 18px 0;
+    font-size: 17px;
     text-align: center;
+  }
+
+  .titulo-projeto {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;  
+
   }
 }

@@ -53,7 +53,9 @@
         </aside>
 
         <section class="conteudo">
-            <h1>Guia de Impressão 3D</h1>
+             <div class="banner-guia">
+                <h1>Guia de Impressão 3D</h1>
+            </div>
 
             <article id="conceitos">
                 <h2>Conceitos Básicos</h2>
@@ -180,26 +182,83 @@
             <article id="erros">
                 <h2>Erros Comuns</h2>
 
+                <p>Como falado anteriormente, a alteração dos parâmetros causa alterações visíveis no resultado final, e existem alguns erros e condições comuns de se observar no objeto impresso.<br>
+                Impressópolis é um modelo de calibração modular, onde cada modulo permite analisar separadamente esses erros. Com auxílio deste modelo, vamos explorar e entender os defeitos e sua relação com os parâmetros de calibração do fatiador.
+                </p>
+
                 <h3 id="overhang">Overhang</h3>
-                <p>(inserir texto)</p>
+                <p>Overhangs são regiões da peça onde há inclinação sem um suporte para sustentação. Na impressão 3D FDM, é viável imprimir em ângulos de até 45°, pois é possível apoiar na camada de baixo o suficiente. Quanto maior a inclinação, maior o domínio dos parâmetros é necessário para uma impressão de qualidade.</p>
+
+                <div class="imagem-guia">
+                    <img src="img/11- Overhang.jpg" alt="Exemplo de Overhang">
+                </div>
+
+                <p>Os principais parâmetros relacionados aos overhangs são a temperatura de extrusão, velocidade de impressão e resfriamento. Para inclinações muito grandes, ativar o parâmetro suporte pode ser ideal.
+                    <li>Temperatura de extrusão: Quando a temperatura está muito alta, o filamento amolece além do ideal, causando perda de sustentação da camada e queda do material</li>
+                    <li>Velocidade de impressão: Com velocidades altas o tempo de sustentação do material recém-extrudado diminui, fazendo com que ele ceda antes de solidificar.</li>
+                    <li>Resfriamento: Baixo resfriamento pode tornar a solidificação da camada mais lenta.</li>
+                    </p>
+
 
                 <h3 id="stringing">Stringing</h3>
-                <p>(inserir texto)</p>
+                <p>Neste erro, observa-se fios finos de material que se formam entre partes separadas da peça. Isso acontece quando o bico se desloca de um lugar para o outro e nesse espaço não há impressão, mas o filamento acaba se depositando no ar em pequenas quantidades, formando fios. No modelo abaixo, quando as configurações não estão adequadas, ao se deslocar de um poste para o outro, pode-se perceber a formação de teias.</p>
+
+                <div class="imagem-guia">
+                    <img src="img/12- Stringing.jpg" alt="Exemplo de Stringing">
+                </div>
+
+                <p>
+                    Essa condição está relacionada principalmente aos parâmetros de retração, temperatura e velocidade de impressão.
+                    <li>Retração: Se a retração estiver baixa, o filamento não é “recolhido” o suficiente durante a movimentação entre as regiões.</li>
+                    <li>Temperatura de extrusão: Altas temperaturas podem fazer o material escorrer para fora do bico mesmo sem o movimento de extrusão do filamento.</li>
+                    <li>Velocidade de Impressão: A velocidade de deslocamento baixa também pode ocasionar no escorrimento de material.</li>
+                </p>
+
 
                 <h3 id="warping">Warping</h3>
-                <p>(inserir texto)</p>
+                <p>Warping é a deformação da peça causada pela contração do material, geralmente observada nas bordas e regiões inferiores. A temperatura da mesa e fatores externos influenciam diretamente esse erro.</p>
 
+                <li>Temperatura da mesa: A base da impressão pode contrair se a plataforma estiver muito quente.</li>
+                <li>Fatores externos: Variações na temperatura do ambiente ou temperaturas muito baixas ou altas podem causar deformações na peça.</li>
+
+                <div class="imagem-guia2">
+                    <img src="img/13- Warping.jpg" alt="Exemplo de Warping">
+                </div>
+                
                 <h3 id="ponte">Ponte</h3>
-                <p>(inserir texto)</p>
+                <p>Pontes são trechos em que o material é extrudado no ar entre dois pontos de apoio. Quando não há precisão nas configurações, a camada cai ou apresenta irregularidades.<br>
+                Para obter qualidade em pontes, é necessário se atentar ao resfriamento, velocidade de impressão e temperatura de extrusão. 
+                </p>
+
+                <li>Resfriamento: Se o resfriamento for insuficiente, a camada tende a cair antes de se solidificar.</li>
+                <li>Velocidade de impressão: Em velocidades muito baixas, o filamento pode ceder antes de chegar ao ponto de apoio, já em velocidades muito altas o filamento pode não ser depositado corretamente, causando irregularidades.</li>
+                <li>Temperatura de extrusão: Quanto maior a temperatura, mais o filamento torna-se maleável, dificultando a formação da ponte.</li>
+
+                <div class="imagem-guia">
+                    <img src="img/14- Pontes.jpg" alt="Exemplo de Pontes">
+                </div>
 
                 <h3 id="ondulacoes">Ondulações</h3>
-                <p>(inserir texto)</p>
+                <p>Ondulações são padrões repetitivos nas superfícies da peça. Podem estar relacionadas à velocidade de impressão e fatores externos.</p>
+                <li>Velocidade de impressão: Velocidades elevadas intensificam vibrações mecânicas da impressora, que se refletem na superfície da peça.</li>
+                <li>Fatores Externos: Se a superfície de apoio da impressora for instável, o movimento da própria máquina pode gerar vibrações que causam o aparecimento das ondulações.</li>
+
+                
 
                 <h3 id="extrusao">Subextrusão e Sobreextrusão</h3>
-                <p>(inserir texto)</p>
+
+                <p>A subextrusão ocorre quando há falta de material depositado, enquanto a sobreextrusão ocorre pelo excesso. Esses erros estão diretamente relacionados à temperatura de extrusão e ao fluxo de material.</p>
+
+                <li>Temperatura de Extrusão: temperaturas baixas podem dificultar a saída do filamento, enquanto temperaturas altas ocasionam a saída de material em excesso.</li>
+                <li>Fluxo de Material: O fluxo afeta diretamente a quantidade de material que sai.</li>
+
+                <p>Quando a superfície da peça apresenta buracos ou linhas inteiras em evidência das anteriores, é possível que o problema seja de subextrusão. Já quando há pequenas bolinhas ou linhas “saltando” para fora, é possível que o problema seja sobreextrusão</p>
 
                 <h3 id="pe-elefante">Pé de Elefante</h3>
-                <p>(inserir texto)</p>
+                <p>O pé de elefante é o alargamento das primeiras camadas da peça, geralmente relacionado à temperatura da mesa.</p>
+
+                <li>Temperatura da mesa: Temperaturas muito altas da mesa podem atrapalhar a solidificação do material, que deforma ao receber as próximas camadas.</li>
+
             </article>
         </section>
 
