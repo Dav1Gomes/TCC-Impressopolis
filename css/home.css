@@ -1,33 +1,38 @@
 .hero {
   background: #e0e0e0;
-  height: 300px;
+  min-height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .hero-conteudo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;         
-  margin-top: 40px;  
+  gap: 40px;
 }
 
 .titulo-projeto {
   font-size: 56px;
   color: #333;
+  text-align: center;
 }
 
 .btn-download {
   background: #8cec74;
   color: white;
   border: none;
-  padding: 34px 80px;   
-  font-size: 34px;      
+  padding: 34px 80px;
+  font-size: 34px;
   border-radius: 18px;
   cursor: pointer;
   transition: transform 0.25s ease, opacity 0.25s ease;
+  margin-top: 100px;
 }
 
 .btn-download:hover {
@@ -35,12 +40,12 @@
   opacity: 0.9;
 }
 
-
 .menu-principal {
   display: flex;
   justify-content: center;
   gap: 40px;
-  padding: 30px 20px;
+  padding: 40px 20px;
+  margin-top: 20px;
 }
 
 .btn-menu {
@@ -51,6 +56,7 @@
   border-radius: 20px;
   font-size: 20px;
   transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-top: 100px;
 }
 
 .btn-menu:hover {
@@ -58,41 +64,40 @@
   opacity: 0.9;
 }
 
-
 @media (max-width: 768px) {
 
   .hero {
-    height: 260px;
+    min-height: 260px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .hero-conteudo {
-  margin-top: 20px;
-  gap: 22px;  
-}
+    gap: 24px;
+  }
 
-.titulo-projeto {
-  font-size: 34px;
-  text-align: center;
-}
+  .titulo-projeto {
+    font-size: 34px;
+  }
 
-.btn-download {
-  width: 90%;
-  max-width: 320px;
-  padding: 36px 0;
-  font-size: 22px;
-}
-
+  .btn-download {
+    width: 90%;
+    max-width: 320px;
+    padding: 26px 0;
+    font-size: 22px;
+  }
 
   .menu-principal {
     flex-direction: column;
     align-items: center;
     gap: 18px;
+    padding-top: 20px;
   }
 
   .btn-menu {
     width: 90%;
     max-width: 320px;
-    padding: 22px 0;
+    padding: 20px 0;
     font-size: 18px;
     text-align: center;
   }

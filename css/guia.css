@@ -94,6 +94,18 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.imagem-guia2 {
+    margin: 30px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-guia2 img {
+    max-width: 40%;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 
 html {
     scroll-behavior: smooth;
