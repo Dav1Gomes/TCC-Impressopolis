@@ -1,5 +1,5 @@
 .sobre-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 80px auto;
     padding: 0 20px;
 }
@@ -9,9 +9,43 @@
     margin-bottom: 50px;
 }
 
-.sobre-container p {
+.sobre-layout {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto p {
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 25px;
     text-align: justify;
+}
+
+.gif-impressopolis img {
+    width: 70%;
+    max-width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+
+    .sobre-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto p {
+        text-align: justify;
+    }
+
+    .gif-impressopolis img {
+        max-width: 220px;
+        margin-top: 20px;
+    }
 }
