@@ -213,6 +213,14 @@
   margin-left: 30px;
   margin-right: -10px;
 }
+.imagens-modulo2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 30px;
+  margin-right: -10px;
+}
 
 .filtro {
   margin-top: 30px;
